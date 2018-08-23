@@ -1,9 +1,13 @@
+import comidas.*
+import pepita.*
+
 
 object pepon {
-	// aca falta un atributo
+	var energia = 0
 	
-	method comer(cosa, cuanto) { }  // implementar
-	method volar(kms) { }           // implementar
+	method energia(){return energia}
+	method comer(cosa, cuanto) {energia=energia+ (cosa.energiaPorGramo()) * (cuanto/2) }  // implementar
+	method volar(kms) {energia = energia - (kms*0.5)-1 }           // implementar
 	method haceLoQueQuieras() { }   // implementar
 }
 
